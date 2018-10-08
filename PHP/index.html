@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Tim Horton's Order Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <img src="images/header.jpg" alt="Logo"/>
+            <h1>Welcome to Tim Horton's</h1>
+            <h2>Place your order here:</h2>
+        </div>
+
+        <div class="col-12 text-center" id="order">
+            <form method="Post" action="order.php">
+				
+				<!-- The first input of # of coffees -->
+				
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+				  		<label class="input-group-text" for="inputGroupSelect01">Number of Coffees (max 5)</label>
+				  	</div>
+					<select class="custom-select" name="amount">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+			  	</div>
+				
+				<!-- The second input of size of coffees -->
+				
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<label class="input-group-text">Size 	of Coffees
+						</label>
+					</div>
+					<select class="custom-select" name="size">
+						<option value="s">Small</option>
+						<option value="m">Medium</option>
+						<option value="l">Large</option>
+						<option value="xl">Extra Large</option>
+                	</select>
+				</div>
+                
+                <!-- The third input of the # of Creams -->
+				
+			  <div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<label class="input-group-text">
+							Cream (max 5)
+						</label>
+				  </div>
+				  <input class="form-control" type="number" name="Cream" value="0" min="0" max="5">
+				</div>
+				
+				<!-- The fourth input of the # of Sugars -->
+	
+			  <div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<label class="input-group-text">
+							Sugar (max 5)
+						</label>
+					</div>
+					<input class="form-control" type="number" name="Sugar" value="0" min="0" max="5">
+				</div>
+				
+				<!-- Clear and order buttons -->
+				
+                <input class="btn" type="reset" value="Clear">
+                <input class="btn btn-success" type="submit" value="Order">
+				
+    		</form>
+        </div>
+		
+		<!-- Images of the coffees at the bottom -->
+		
+        <div class="products">
+            <img src="images/og.png" alt="Original Blend">
+            <img src="images/dark.png" alt="Dark Roast">
+            <img src="images/decaf.png" alt="Decaf">
+        </div>
+
+		<!-- footer class -->
+		
+        <div class="footer">
+
+        </div>
+    </body>
+</html>
