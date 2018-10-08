@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-Apr-2017, 11:52:24 PM
+    Author     : tomo
+*/
+
+html {
+    background-color:#f88379;
+    color:#f8c379;
+    font-family: 'Akkurat', Helvetica, sans-serif;
+    font-size:10px;
+}
+div.container {
+    margin:15vh 5% 0;
+}
+p.summary {
+    font-size:2rem;
+    line-height:3.5rem;
+}
+h3.summary {
+    font-size:3em;
+    line-height:3.5rem;
+}
+h1.summary{
+    font-size: 5em;
+}
+div.button {
+    background-color:#f8c379;
+    border-radius:0.5rem;
+    box-shadow:0.375rem 0.375rem 0 -1px rgb(245,86,73);
+    color:#f88379;
+    display:inline-block;
+    font-size:1.9375rem;
+    font-weight:bold;
+    letter-spacing:0.04em;
+    padding:0.8125rem 1.875rem;
+	margin: 1rem 0.2rem;
+    text-transform:uppercase;
+}
+@media (min-width: 42em) {
+    html {
+        font-size:16px;
+    }
+
+    div.container {
+        margin:25vh 5% 0;
+    }
+}
+@media (min-width: 70em) {
+    html {
+        font-size:16px;
+    }
+
+    div.container {
+        margin:30vh 15% 0;
+    }
+}
