@@ -1,91 +1,68 @@
-html{
-	height:100%;
+html {
+	height: 100%;
 }
-body{
+
+:root {
+	--primary-colour: #0099FF;
+	--secondary-colour: #00B1FF;
+	--gradient-webkit: -webkit-linear-gradient(#FDF480, #FA7575);
+	--gradient-opera: -o-linear-gradient(#FDF480, #FA7575);
+	--gradient-moz: -moz-linear-gradient(#FDF480, #FA7575);
+	--gradeint-standard: linear-gradient(#FDF480, #FA7575);
+}
+
+body {
 	margin: 0;
 	padding: 0;
-	height:100%;
+	height: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	text-align: center;
 }
 
-#gradient{
-    background: orange; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#FDF480, #FA7575); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FDF480, #FA7575); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FDF480, #FA7575); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FDF480, #FA7575); /* Standard syntax */
+#gradient {
+	background: orange;
+	/* For browsers that do not support gradients */
+	background: var(--gradient-webkit);
+	/* For Safari 5.1 to 6.0 */
+	background: var(--gradient-opera);
+	/* For Opera 11.1 to 12.0 */
+	background: var(--gradient-moz);
+	/* For Firefox 3.6 to 15 */
+	background: var(--gradeint-standard);
+	/* Standard syntax */
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333432;
-}
-
-li {
-    float: left;
-	width: 33.3333333333333333%;
-	text-align: center;
-}
-
-li a, .nav-item {
-    display: block;
-    color: #4AFFF0;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li:hover, .nav-item:hover{
-    background-color: red;
-}
-
-.content{
-	text-align: center;
-}
-
-.img-circle{
+.img-circle {
 	border-radius: 50%;
 	height: auto;
 	width: 20%;
 	margin-top: 10%;
 }
 
-.home h1{
-	color: #0099FF;
+.home h1 {
+	color: var(--primary-colour);
 	font-size: 4em;
 }
 
-.home h4{
+.home h4 {
 	display: inline-block;
 	margin: 1%;
-	color: #00B1FF;
+	color: var(--secondary-colour);
 	font-size: 2em;
 }
 
-.about{
+.about {
 	display: inline-block;
 	width: 98%;
-	margin-top: 10%;
-	color: white;
+	background-color: var(--primary-colour);
+	color: azure;
 }
 
-#gradient2{
-	background: #79FBE2; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#79FBE2, #FA7575); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#79FBE2, #FA7575); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#79FBE2, #FA7575); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#79FBE2, #FA7575); /* Standard syntax */
-}
-
-.about h1{
+.about h1 {
 	font-size: 4em;
 }
 
-.about p{
+.about p {
 	font-size: 1.5em;
 }
